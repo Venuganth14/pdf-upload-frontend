@@ -1,0 +1,55 @@
+/* App.css or index.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #D5282B, #E55E15, #ED8A24, #D9638E, #BF519F, #A642A3);
+  background-size: 600% 600%;
+  animation: GradientBackground 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; /* Ensure no default margin is applied */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure your components have a proper background to be readable */
+.component-wrapper {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* App header styles */
+.App-header {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0;
+  right: 0;
+  background-color: #282c34;
+  min-height: 100px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
